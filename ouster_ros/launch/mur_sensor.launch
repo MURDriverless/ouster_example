@@ -25,7 +25,7 @@
     TIME_FROM_ROS_TIME
     }"/>
   <arg name="metadata" default="" doc="path to write metadata file when receiving sensor data"/>
-  <arg name="viz" default="true" doc="whether to run a rviz"/>
+  <arg name="viz" default="false" doc="whether to run a rviz"/>
   <arg name="rviz_config" default="$(find ouster_ros)/config/viz.rviz" doc="optional rviz config file"/>
   <arg name="tf_prefix" default="" doc="namespace for tf transforms"/>
 
