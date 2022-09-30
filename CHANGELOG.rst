@@ -2,6 +2,15 @@
 Changelog
 =========
 
+
+[20220927]
+==========
+
+ouster_client
+--------------
+* fix a bug in longform init_client which was not setting timestamp_mode and lidar_mode correctly
+  
+
 [20220826]
 ==========
 
@@ -20,6 +29,7 @@ ouster_client
 * use of sensor http interface for comms with sensors for FW 2.1+
 * propogate C++ 17 usage requirement in cmake for C++ libraries built as C++17
 * allow vcpkg configuration via environment variables
+* fix a bug in sensor_config struct equality comparison operator
 
 ouster_pcap
 -----------
@@ -42,7 +52,8 @@ ouster_ros
 * drop FW 1.13 compatibility for sensors and recorded bags
 * remove setting of EIGEN_MAX_ALIGN_BYTES
 * add two new ros services /ouster/get_config and /ouster/set_config (experimental)
-* Add new timestamp_mode TIME_FROM_ROS_TIME
+* add new timestamp_mode TIME_FROM_ROS_TIME
+* declare PCL_NO_PRECOMPILE ahead of all PCL library includes
 
 
 [20220608]
